@@ -1,11 +1,32 @@
 <script lang="ts" setup>
+// import query from './query/example-query.gql'
 // composable
 const { t } = useLang()
-
+const graphql = useStrapiGraphQL()
 // meta
 definePageMeta({
   layout: 'page',
 })
+// graphQl
+// const route = useRoute()
+let article: any
+try {
+  article = await graphql(`
+    query {
+      articles {
+        data {
+          id
+          attributes {
+            title
+          }
+        }
+      }
+    }
+  `)
+  console.log(article)
+} catch (e) {
+  console.log(e)
+}
 
 // vars
 const titlesText = computed<string[]>(() => t('pages.index.title').split('[]'))
@@ -34,6 +55,7 @@ const leadingsText = computed(() => [
 <template>
   <PageWrapper class="flex justify-center items-center">
     <div class="background-overlay">
+      <div>{{ article }}</div>
       <div
         class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded-full bg-gray-900 dark:bg-white"
       ></div>

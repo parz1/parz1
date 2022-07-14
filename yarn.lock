@@ -2106,6 +2106,17 @@
     defu "^6.0.0"
     eslint-webpack-plugin "^2.6.0"
 
+"@nuxtjs/strapi@npm:@nuxtjs/strapi-edge@latest":
+  version "1.4.0-27605343.cb4b235"
+  resolved "https://registry.npmmirror.com/@nuxtjs/strapi-edge/-/strapi-edge-1.4.0-27605343.cb4b235.tgz#e59f600f3242e3b2a01b7a18b1a48487bd696df3"
+  integrity sha512-vznok9HfUMO5FqKE6M5vKSyQWVvjOUN1Po6OxaMJD7htj5CbTPwLnX60to9EaSE8BIu1eWzZMgMt6/SwheAiAw==
+  dependencies:
+    "@nuxt/kit" "^3.0.0-rc.4"
+    defu "^6.0.0"
+    graphql "^16.5.0"
+    pathe "^0.3.0"
+    qs "^6.10.5"
+
 "@nuxtjs/svg@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/svg/-/svg-0.3.0.tgz#a6f91743ffba8ed05766c013a401c96452c35176"
@@ -2148,6 +2159,14 @@
     is-reference "^1.2.1"
     magic-string "^0.25.7"
     resolve "^1.17.0"
+
+"@rollup/plugin-graphql@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmmirror.com/@rollup/plugin-graphql/-/plugin-graphql-1.1.0.tgz#492f579816f65bc21ce26394f2f140d95192622d"
+  integrity sha512-X+H6oFlprDlnO3D0UiEytdW97AMphPXO0C7KunS7i/rBXIGQRQVDU5WKTXnBu2tfyYbjCTtfhXMSGI0i885PNg==
+  dependencies:
+    "@rollup/pluginutils" "^4.0.0"
+    graphql-tag "^2.2.2"
 
 "@rollup/plugin-inject@^4.0.4":
   version "4.0.4"
@@ -2199,7 +2218,7 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@rollup/pluginutils@^4.1.0", "@rollup/pluginutils@^4.2.1":
+"@rollup/pluginutils@^4.0.0", "@rollup/pluginutils@^4.1.0", "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
   integrity sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==
@@ -5643,6 +5662,18 @@ graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
+graphql-tag@^2.2.2:
+  version "2.12.6"
+  resolved "https://registry.npmmirror.com/graphql-tag/-/graphql-tag-2.12.6.tgz#d441a569c1d2537ef10ca3d1633b48725329b5f1"
+  integrity sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==
+  dependencies:
+    tslib "^2.1.0"
+
+graphql@^16.5.0:
+  version "16.5.0"
+  resolved "https://registry.npmmirror.com/graphql/-/graphql-16.5.0.tgz#41b5c1182eaac7f3d47164fb247f61e4dfb69c85"
+  integrity sha512-qbHgh8Ix+j/qY+a/ZcJnFQ+j8ezakqPiHwPiZhV/3PgGlgf96QMBB5/f2rkiC9sgLoy/xvT6TSiaf2nTHJh5iA==
+
 gzip-size@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-7.0.0.tgz#9f9644251f15bc78460fccef4055ae5a5562ac60"
@@ -8873,6 +8904,13 @@ q@^1.1.2, q@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+
+qs@^6.10.5:
+  version "6.11.0"
+  resolved "https://registry.npmmirror.com/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
+  integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
+  dependencies:
+    side-channel "^1.0.4"
 
 qs@^6.9.4:
   version "6.10.3"

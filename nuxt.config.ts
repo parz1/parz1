@@ -2,7 +2,8 @@ import { defineNuxtConfig } from 'nuxt'
 import { IntlifyModuleOptions } from '@intlify/nuxt3'
 import UnpluginComponentsVite from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
-
+import graphql from '@rollup/plugin-graphql'
+import { PluginOption } from 'vite'
 declare module '@nuxt/schema' {
   interface NuxtConfig {
     intlify?: IntlifyModuleOptions
@@ -11,17 +12,18 @@ declare module '@nuxt/schema' {
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  ssr: false,
   // app
   app: {
     head: {
-      title: 'Nuxt 3 Awesome Starter',
-      titleTemplate: '%s - Nuxt 3 Awesome Starter',
+      title: '安溯网',
+      titleTemplate: '%s - 安溯网',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
-          content: 'Nuxt 3 Awesome Starter',
+          content: '安溯网',
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -38,7 +40,11 @@ export default defineNuxtConfig({
   ],
 
   // plugins
-  plugins: ['~/plugins/navbar.ts'],
+  plugins: [
+    '~/plugins/navbar.ts',
+    '~/plugins/strapi.client.ts',
+    '~/plugins/error.handler.ts',
+  ],
 
   // build
   build: {
@@ -54,7 +60,15 @@ export default defineNuxtConfig({
     'unplugin-icons/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/svg',
+    '@nuxtjs/strapi',
   ],
+  strapi: {
+    // options
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+  },
 
   // experimental features
   experimental: {
@@ -67,6 +81,7 @@ export default defineNuxtConfig({
   // vite plugins
   vite: {
     plugins: [
+      graphql() as PluginOption,
       UnpluginComponentsVite({
         dts: true,
         resolvers: [
