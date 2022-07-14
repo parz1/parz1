@@ -37,7 +37,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.0",
+    "husky": "^8.0.1",
     "js-yaml": "^4.1.0",
     "lint-staged": "^12.3.3",
     "nuxt": "npm:nuxt3@3.0.0-rc.4-27605536.8c2c80e",
@@ -59,6 +59,7 @@
     ]
   },
   "dependencies": {
-    "@rollup/plugin-graphql": "^1.1.0"
+    "@rollup/plugin-graphql": "^1.1.0",
+    "element-plus": "^2.2.9"
   }
 }
