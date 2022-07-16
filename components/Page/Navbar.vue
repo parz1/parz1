@@ -26,7 +26,7 @@ const menus = computed((): IMenuItem[] => [
 
 <template>
   <BuilderNavbar>
-    <template #banner>
+    <!-- <template #banner>
       <div
         class="text-white text-xs text-center py-1 px-4 lg:px-8 bg-primary-500 capitalize"
       >
@@ -36,10 +36,10 @@ const menus = computed((): IMenuItem[] => [
         <Anchor
           class="underline font-bold"
           :text="$t('others.learn_more')"
-          href="https://github.com/viandwi24/nuxt3-awesome-starter"
+          href="https://github.com/parz1"
         />
       </div>
-    </template>
+    </template> -->
     <template #menu>
       <div class="relative hidden lg:flex items-center ml-auto">
         <nav
@@ -73,7 +73,7 @@ const menus = computed((): IMenuItem[] => [
           <ThemeSwitcher />
           <Anchor
             class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
-            href="https://github.com/viandwi24/nuxt3-awesome-starter"
+            href="https://github.com/parz1"
             title="Github"
           >
             <IconMdi:github-face />
@@ -127,11 +127,7 @@ const menus = computed((): IMenuItem[] => [
             <LanguageSwitcher type="select-box" />
           </div>
         </ActionSheetBody>
-        <Button
-          type="secondary"
-          title="Github"
-          href="https://github.com/viandwi24/nuxt3-awesome-starter"
-        >
+        <Button type="secondary" title="Github" href="https://github.com/parz1">
           <IconMdi:github-face />
           <span class="ml-1">Github</span>
         </Button>

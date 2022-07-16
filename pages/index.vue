@@ -10,20 +10,24 @@ definePageMeta({
 // graphQl
 // const route = useRoute()
 let article: any
+let res: any
 try {
-  article = await graphql(`
-    query {
-      articles {
-        data {
-          id
-          attributes {
-            title
+  res = await useAsyncData('article', async () => {
+    article = await graphql(`
+      query {
+        articles {
+          data {
+            id
+            attributes {
+              title
+            }
           }
         }
       }
-    }
-  `)
-  console.log(article)
+    `)
+    return article
+  })
+  console.log(res)
 } catch (e) {
   console.log(e)
 }
@@ -55,7 +59,6 @@ const leadingsText = computed(() => [
 <template>
   <PageWrapper class="flex justify-center items-center">
     <div class="background-overlay">
-      <div>{{ article }}</div>
       <div
         class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded-full bg-gray-900 dark:bg-white"
       ></div>

@@ -20,7 +20,7 @@ const app = useState<IApp>('app')
             class="flex flex-col md:flex-row space-x-2 items-center md:float-right"
           >
             <span class="text-center md:text-right">
-              design by <a href="https://github.com/viandwi24">viandwi24</a>
+              <a href="https://github.com/viandwi24">nuxt3-awesome-starter</a>
             </span>
             <span
               class="block bg-blue-500 rounded px-1 py-0.5 text-white text-xs"

@@ -12,18 +12,19 @@ declare module '@nuxt/schema' {
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
+  target: 'static',
+  // ssr: false,
   // app
   app: {
     head: {
-      title: '安溯网',
-      titleTemplate: '%s - 安溯网',
+      title: "parz1's fantasy",
+      titleTemplate: '%s - parz1',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
-          content: '安溯网',
+          content: 'parz1',
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

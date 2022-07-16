@@ -8,7 +8,7 @@ pages:
   '404':
     title: ページが見つかりません
   index:
-    title: nuxt 3 [] awesome [] starter
+    title: parz1 [] fantasy [] world
   blank:
     nav: 空欄
     title: 空白ページ

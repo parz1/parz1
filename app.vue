@@ -20,6 +20,7 @@ const locale = useState<string>('locale.setting')
 
 const { login } = useStrapiAuth()
 // const router = useRouter()
+
 const onSubmit = async () => {
   try {
     await login({
@@ -33,5 +34,8 @@ const onSubmit = async () => {
     console.log(e)
   }
 }
-onSubmit()
+if (process.server) onSubmit()
+// await useAsyncData('', () => {
+//   return Promise.resolve()
+// })
 </script>
