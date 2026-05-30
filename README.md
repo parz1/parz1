@@ -8,15 +8,15 @@
 
 ## Hi, I am Zhou Lei
 
-`parz1` is inspired by Parzival from *Ready Player One*.
+`parz1` is inspired by Parzival from [*Ready Player One*](https://en.wikipedia.org/wiki/Ready_Player_One).
 
-M.S. student at **The University of Tokyo III/GSII**.  
-B.Eng. from **Hangzhou Dianzi University**.  
+M.S. student at **[The University of Tokyo III/GSII](https://www.iii.u-tokyo.ac.jp/about/iii)**.  
+B.Eng. from **[Hangzhou Dianzi University](https://en.hdu.edu.cn/)**.  
 Building at the intersection of **full-stack engineering**, **AI-native apps**, and **personal knowledge systems**.
 
 ## Current Mode
 
-- Building **Minerei**
+- Building **[Minerei](https://github.com/minerei-devs)**
 - Designing the **Thing / Log system**, a new paradigm for personal knowledge and action
 - Exploring AI-native applications, agent systems, and human-computer interaction
 - Moving from full-stack development toward deeper AI and systems engineering
@@ -43,21 +43,11 @@ Building at the intersection of **full-stack engineering**, **AI-native apps**, 
 | **Product systems** | Polished interfaces backed by reliable engineering |
 | **Developer tools** | Small sharp workflows that compound over time |
 
-## GitHub Signals
-
-<div align="center">
-
-![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parz1&theme=github_dark)
-![Streak](https://github-readme-streak-stats.herokuapp.com?user=parz1&theme=tokyonight&hide_border=true)
-![Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parz1&theme=github_dark)
-
-</div>
-
 ## Find Me
 
 <p>
-  <a href="https://github.com/parz1">
-    <img src="https://img.shields.io/badge/GitHub-parz1-111827?style=for-the-badge&logo=github&logoColor=ffffff" alt="GitHub" />
+  <a href="https://parz.minerei.dev">
+    <img src="https://img.shields.io/badge/Blog-parz.minerei.dev-111827?style=for-the-badge&logo=vercel&logoColor=ffffff" alt="Blog" />
   </a>
 </p>
 
